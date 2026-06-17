@@ -10,7 +10,7 @@ const services = [
 const Servicos = () => {
   const handleWhatsApp = (serviceName) => {
     const msg = serviceName ? `Olá! Gostaria de agendar uma ${serviceName}.` : 'Olá! Gostaria de agendar uma lavação.'
-    window.open(`https://wa.me/5548XXXXXXXXX?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/5548996040737?text=${encodeURIComponent(msg)}`, '_blank')
   }
 
   return (

@@ -1,7 +1,7 @@
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5548XXXXXXXXX?text=Olá! Gostaria de agendar uma lavação.', '_blank')
+    window.open('https://wa.me/5548996040737?text=Olá! Gostaria de agendar uma lavação.', '_blank')
   }
 
   return (

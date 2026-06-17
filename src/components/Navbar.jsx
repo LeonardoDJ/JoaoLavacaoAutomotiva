@@ -5,7 +5,7 @@ const Navbar = () => {
   }
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5548XXXXXXXXX?text=Olá! Gostaria de agendar uma lavação.', '_blank')
+    window.open('https://wa.me/5548996040737?text=Olá! Gostaria de agendar uma lavação.', '_blank')
   }
 
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontFamily: 'Poppins, sans-serif', fontWeight: 800, fontSize: '1.1rem' }}>
         <div style={{ width: '36px', height: '36px', background: 'var(--primary)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🚗</div>
-        João Lavação
+        João Lavação Automotiva
       </div>
       
       <ul style={{ display: 'flex', gap: '28px', listStyle: 'none', margin: 0, padding: 0 }}>
