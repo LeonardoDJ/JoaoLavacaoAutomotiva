@@ -1,0 +1,175 @@
+.servicos-section {
+  padding: 80px 5%;
+}
+
+.servicos-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.servicos-titulo {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.servicos-subtitulo {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.servico-card {
+  padding: 28px 24px;
+}
+
+.servico-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.servico-card-botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-saber-mais,
+.btn-agendar {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-saber-mais {
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  border-radius: 16px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+}
+
+.modal-fechar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.modal-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.modal-imagem {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.modal-btn-agendar {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ===== TABLET (até 768px) ===== */
+@media (max-width: 768px) {
+  .servicos-section {
+    padding: 60px 5%;
+  }
+
+  .servicos-subtitulo {
+    margin-bottom: 40px;
+  }
+}
+
+/* ===== CELULAR (até 480px) ===== */
+@media (max-width: 480px) {
+  .servicos-section {
+    padding: 40px 5%;
+  }
+
+  .servico-card {
+    padding: 20px 18px;
+  }
+
+  .servico-card-botoes {
+    flex-direction: column;
+  }
+
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-content {
+    padding: 20px;
+    max-height: 90vh;
+  }
+
+  .modal-imagens {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-imagem {
+    height: 180px;
+  }
+}

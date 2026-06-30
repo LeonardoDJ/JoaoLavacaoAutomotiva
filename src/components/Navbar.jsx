@@ -45,9 +45,9 @@ const Navbar = () => {
       <div>
         <button 
           onClick={handleWhatsApp}
-          style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 22px', borderRadius: '8px', fontWeight: 600, fontSize: '0.9rem', cursor: 'pointer', background: 'var(--primary)', color: '#fff', border: 'none' }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 22px', borderRadius: '8px', fontWeight: 600, fontSize: '0.9rem', cursor: 'pointer', background: '#075E54', color: '#fff', border: 'none' }}
         >
-          💬 Agendar pelo WhatsApp
+          Agendar pelo WhatsApp
         </button>
       </div>
     </nav>

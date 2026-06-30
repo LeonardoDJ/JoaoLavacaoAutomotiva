@@ -1,0 +1,81 @@
+/* responsive.css */
+
+:root {
+  --section-padding: 80px 5%;
+  --section-padding-tablet: 60px 5%;
+  --section-padding-mobile: 40px 5%;
+
+  --gap-padrao: 20px;
+  --radius-card: 16px;
+}
+
+/* ===== UTILITÁRIOS REUTILIZÁVEIS ===== */
+
+/* Toda seção do site usa isso como base */
+.section-padrao {
+  padding: var(--section-padding);
+}
+
+/* Grid responsivo padrão pra cards (serviços, depoimentos, galeria, etc) */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap-padrao);
+}
+
+/* Linha de botões que empilha no celular */
+.botoes-linha {
+  display: flex;
+  gap: 8px;
+}
+
+/* Modal padrão (qualquer modal do site usa essas classes) */
+.modal-overlay-padrao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content-padrao {
+  border-radius: var(--radius-card);
+  max-width: 520px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+}
+
+/* ===== BREAKPOINTS GLOBAIS (mesma regra pra tudo) ===== */
+
+@media (max-width: 768px) {
+  .section-padrao {
+    padding: var(--section-padding-tablet);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padrao {
+    padding: var(--section-padding-mobile);
+  }
+
+  .botoes-linha {
+    flex-direction: column;
+  }
+
+  .modal-overlay-padrao {
+    padding: 12px;
+  }
+
+  .modal-content-padrao {
+    padding: 20px;
+    max-height: 90vh;
+  }
+}
